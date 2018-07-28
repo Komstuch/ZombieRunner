@@ -1,5 +1,6 @@
 - Make the zombies spawn
-- Animate the helicopter landing
-- Make the helicopter target the flare
+- [DONE]Animate the helicopter landing - with script
+- [DONE]Make the helicopter target the flare
 - [DONE]Create UI
 - Implement Difficulty as zombie speed multiplier
+- [DONE] Switch to Trello with Kanban board 

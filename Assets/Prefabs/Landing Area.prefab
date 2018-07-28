@@ -37,6 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4179572881406024}
   - component: {fileID: 65526623836920030}
+  - component: {fileID: 114374343915558604}
   m_Layer: 0
   m_Name: Landing Area
   m_TagString: Untagged
@@ -145,6 +146,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 60, y: 30, z: 60}
   m_Center: {x: 0, y: 15, z: 0}
+--- !u!114 &114374343915558604
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1190135251203116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902ed4042c50ed54993942d0b7321488, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198081125519285716
 ParticleSystem:
   m_ObjectHideFlags: 1
