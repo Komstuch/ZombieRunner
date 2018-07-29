@@ -7,7 +7,7 @@ public class ZombieSpawner : MonoBehaviour {
     public GameObject zombie; // Zombie prefab
     public bool spawningActivated = false;
 
-    private float spawnRate = 5; //Seen every X seconds
+    private float spawnRate = 5f; //Seen every X seconds
     private Transform[] zombieSpawnPoints;
 
 	void Start () {
@@ -45,5 +45,25 @@ public class ZombieSpawner : MonoBehaviour {
     void OnActivateSpawning() {
         Debug.Log("Activate Zombie Spawning");
         spawningActivated = true;
+    }
+
+    void SetZombieSpawnRate()
+    {
+        int difficulty = (int)PlayerPrefsManager.GetDifficulty();
+        switch (difficulty)
+        {
+            case 1:
+                spawnRate = 5f;
+                break;
+            case 2:
+                spawnRate = 2.5f;
+                break;
+            case 3:
+                spawnRate = 1f;
+                break;
+            default:
+                spawnRate = 2.5f;
+                break;
+        }
     }
 }

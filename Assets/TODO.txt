@@ -1,4 +1,4 @@
-- Make the zombies spawn
+- [DONE]Make the zombies spawn
 - [DONE]Animate the helicopter landing - with script
 - [DONE]Make the helicopter target the flare
 - [DONE]Create UI
