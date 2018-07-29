@@ -15,7 +15,7 @@ public class Helicopter : MonoBehaviour {
     private Vector3 offsetXZ; // Offset in XZ plane
     private float offsetY; // Offset in Y plane
 
-    private float horizontalSpeed = 50f; // Speed of approach in XZ plane
+    private float horizontalSpeed = 30f; // Speed of approach in XZ plane
     private float verticalSpeed = -10f; // Speed of descent in Y plane
 
     void Start() {

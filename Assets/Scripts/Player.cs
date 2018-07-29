@@ -10,7 +10,7 @@ public class Player : MonoBehaviour {
 
     private SceneLoader sceneLoader;
     private Transform[] gameSpawnPoints;
-    private bool respawn = false;
+    private bool respawn = true;
     private SpawnPoint[] spawnPoints;
 
     private float playerHeliOffset; //Distance between the player and heli

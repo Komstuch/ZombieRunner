@@ -33,4 +33,9 @@ public class RadioSystem : MonoBehaviour {
         audioSource.Play();
     }
 
+    void OnFindClearArea() {
+        BroadcastMessage("OnActivateSpawning");
+    }
+
+
 }

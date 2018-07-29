@@ -131,7 +131,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1937702996611580}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 259.1, y: 53.53, z: 450.8}
+  m_LocalPosition: {x: 325.2, y: 52.04, z: 465.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4164371421392468}
@@ -200,8 +200,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 60, y: 30, z: 60}
-  m_Center: {x: 0, y: 16, z: 0}
+  m_Size: {x: 50, y: 1, z: 50}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!81 &81451353512630244
 AudioListener:
   m_ObjectHideFlags: 1
@@ -546,6 +546,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpawnPoints: {fileID: 0}
+  landingAreaPrefab: {fileID: 1190135251203116, guid: d37c83086ed31dd40917dc137e99ac52,
+    type: 2}
 --- !u!114 &114725240451231120
 MonoBehaviour:
   m_ObjectHideFlags: 1
