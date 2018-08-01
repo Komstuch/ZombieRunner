@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -151,7 +151,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4527225399562496, guid: 42250cb4e0adb4644a0e0232b203d05e, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 42250cb4e0adb4644a0e0232b203d05e, type: 2}
@@ -840,7 +840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialCall: {fileID: 8300000, guid: d820bfda6b5b74e36a0637de9ed0cd61, type: 3}
   initialReply: {fileID: 8300000, guid: 53f65e57d6bf34c7592571f82475f66f, type: 3}
-  heliArrival: {fileID: 0}
+  heliArrival: {fileID: 8300000, guid: 1ca461e24c8a0cb4e87c2929f36fd99c, type: 3}
 --- !u!4 &1348910588
 Transform:
   m_ObjectHideFlags: 0
@@ -1043,7 +1043,7 @@ Transform:
   - {fileID: 1505221832}
   - {fileID: 230300406}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1800452251
 GameObject:
@@ -1145,6 +1145,21 @@ Prefab:
       propertyPath: playerSpawnPoints
       value: 
       objectReference: {fileID: 1768405397}
+    - target: {fileID: 82650307328489072, guid: 8c2a7298d4c113040a087b8b66ef40d4,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 82247765725175264, guid: 8c2a7298d4c113040a087b8b66ef40d4,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82247765725175264, guid: 8c2a7298d4c113040a087b8b66ef40d4,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c2a7298d4c113040a087b8b66ef40d4, type: 2}
   m_IsPrefabParent: 0

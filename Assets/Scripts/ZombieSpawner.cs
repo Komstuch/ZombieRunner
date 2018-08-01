@@ -17,7 +17,7 @@ public class ZombieSpawner : MonoBehaviour {
 
 	void Update () {
         for (int i =1; i < zombieSpawnPoints.Length; i++) { 
-            if (isTimeToSpawn() && spawningActivated){
+            if (IsTimeToSpawn() && spawningActivated){
                 Spawn(zombieSpawnPoints[i]);
             }
         }
@@ -29,7 +29,7 @@ public class ZombieSpawner : MonoBehaviour {
         myAttacker.transform.position = spawnPoint.transform.position;
     }
 
-    bool isTimeToSpawn() {
+    bool IsTimeToSpawn() {
 
         float spawnsPerSecond = 1 / spawnRate;
 

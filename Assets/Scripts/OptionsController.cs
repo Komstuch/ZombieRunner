@@ -20,7 +20,7 @@ public class OptionsController : MonoBehaviour {
 	}
 	
 	void Update () {
-        //musicManager.SetVolume(volumeSlider.value);
+        musicManager.SetVolume(volumeSlider.value);
         difficulty = (int)diffSlider.value;
         switch (difficulty)
         {
