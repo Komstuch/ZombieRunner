@@ -2682,7 +2682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceToPlayer: 0
   zombieMoans:
-  - {fileID: 8300000, guid: 9f1661fb58a5480469e8e383548fb4ee, type: 3}
+  - {fileID: 8300000, guid: d206eaa490f957f4db9c9212c85738d6, type: 3}
   - {fileID: 8300000, guid: 74a5c9801cb8fe34e8540eb0d265edef, type: 3}
   - {fileID: 8300000, guid: 34296ee1dcb3b95498dcc9751b0fe10a, type: 3}
   - {fileID: 8300000, guid: 9f5f99d36f3468041b5c97915acbd2e3, type: 3}

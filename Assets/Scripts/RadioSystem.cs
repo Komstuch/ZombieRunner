@@ -12,6 +12,7 @@ public class RadioSystem : MonoBehaviour {
 
     void Start() {
         audioSource = GetComponent<AudioSource>();
+        audioSource.volume = PlayerPrefsManager.GetMasterVolume();
     }
 
     void OnMakeInitialHeliCall() {

@@ -11,6 +11,7 @@ public class Helicopter : MonoBehaviour {
     private Rigidbody rigidBody;
     private Animator animator;
     private LandingArea landingArea;
+    private AudioSource audioSource;
 
     private Vector3 offsetXZ; // Offset in XZ plane
     private float offsetY; // Offset in Y plane
@@ -20,7 +21,9 @@ public class Helicopter : MonoBehaviour {
 
     void Start() {
         rigidBody = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>(); 
+        animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+        audioSource.volume = PlayerPrefsManager.GetMasterVolume();
     }
 
     void Update(){

@@ -5,6 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour {
 
+    [SerializeField] float autoLoadNextLevelAfter;
+
+    void Start() {
+        if (autoLoadNextLevelAfter <= 0f) {
+            Debug.LogWarning("Level auto load disabled ,use a positive number in seconds");
+        }
+        else {
+            Debug.Log("LoadLevel");
+            Invoke("LoadNextScreen", autoLoadNextLevelAfter);
+        }
+    }
+
     public void LoadNextScreen() {
 
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;

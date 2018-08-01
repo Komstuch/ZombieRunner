@@ -24,7 +24,7 @@ public class Zombie : MonoBehaviour {
         ChcekDistanceToPlayer();
 
         if (distanceToPlayer < 1.5f) {
-            //sceneLoader.LoadScene("End Game");
+            sceneLoader.LoadScene("End Game");
             Debug.LogWarning("You Lost! killed by: " + name + " " + transform.parent.name);
         }
 

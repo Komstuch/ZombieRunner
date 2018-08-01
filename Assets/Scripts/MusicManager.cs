@@ -5,6 +5,7 @@ using System.Collections;
 public class MusicManager : MonoBehaviour {
 
 	public AudioClip[] levelMusicChangeArray;
+    public AudioClip[] deathSoundArray;
 
 	private AudioSource audioSource;
 
@@ -15,29 +16,24 @@ public class MusicManager : MonoBehaviour {
         audioSource.volume = PlayerPrefsManager.GetMasterVolume();
     }
 
-	void Start () {
+    void OnEnable(){
+        SceneManager.sceneLoaded += OnSceneLoaded;
         audioSource.volume = PlayerPrefsManager.GetMasterVolume();
     }
 
-
-    void OnEnable(){
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
     void OnSceneLoaded(Scene scene, LoadSceneMode mode){
-        Debug.Log("OnSceneLoaded: " + scene.buildIndex);
-
         AudioClip thisLevelMusic = levelMusicChangeArray[scene.buildIndex];
-
-        Debug.Log("Playing clip " + thisLevelMusic);
 
         if (thisLevelMusic)
         { //If there is some music attached
             audioSource.clip = thisLevelMusic;
             audioSource.loop = true;
-            if(scene.name == "End Game") {
+
+            if(scene.name == "End Game") { // If we lost the game play death sound
+                audioSource.clip = deathSoundArray[Random.Range(0, deathSoundArray.Length)];
                 audioSource.loop = false;
                 audioSource.volume = 1f;
+                Debug.Log("You Have died, here is some music: " + audioSource.clip.name);
             }
             audioSource.Play();
         }

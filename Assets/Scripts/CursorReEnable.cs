@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CursorReEnable : MonoBehaviour {
 
-	void Start () {
+	void Awake () {
         Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
 	}
 
 }

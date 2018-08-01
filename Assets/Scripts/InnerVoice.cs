@@ -12,6 +12,7 @@ public class InnerVoice : MonoBehaviour {
 	void Start () {
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = whatHappened;
+        audioSource.volume = PlayerPrefsManager.GetMasterVolume();
         audioSource.Play();
 	}
 
