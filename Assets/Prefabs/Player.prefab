@@ -131,7 +131,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1937702996611580}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 325.2, y: 52.04, z: 465.2}
+  m_LocalPosition: {x: 314.9, y: 63.5, z: 775.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4164371421392468}
@@ -200,7 +200,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 50, y: 1, z: 50}
+  m_Size: {x: 40, y: 1, z: 40}
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!81 &81451353512630244
 AudioListener:
@@ -220,7 +220,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.25
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -414,7 +414,7 @@ MonoBehaviour:
   m_WalkSpeed: 5.5
   m_RunSpeed: 11
   m_RunstepLenghten: 0.7
-  m_JumpSpeed: 10
+  m_JumpSpeed: 7
   m_StickToGroundForce: 1
   m_GravityMultiplier: 2
   m_MouseLook:
